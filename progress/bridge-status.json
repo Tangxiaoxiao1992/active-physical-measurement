@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-09T06:39:56.987515+00:00",
-  "task_id": null,
-  "status": "idle",
-  "detail": "waiting",
-  "last_seq": 4,
+  "updated_at": "2026-09-09T06:41:01.185269+00:00",
+  "task_id": "write-report-smoke-20260909-001",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 5,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
