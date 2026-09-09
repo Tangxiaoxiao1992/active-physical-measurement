@@ -1,7 +1,7 @@
 {
-  "seq": 1,
-  "action": "pause",
-  "task_id": "initial-setup",
-  "expires_at": "2026-10-01T00:00:00Z",
-  "prompt": ""
+  "seq": 2,
+  "action": "run",
+  "task_id": "smoke-readme-20260909-001",
+  "expires_at": "2026-09-09T07:01:17Z",
+  "prompt": "执行只读连接测试。仅查看当前工作目录下的 README.md；如不存在就报告不存在，不搜索其他目录。不修改文件、不联网、不运行实验、不安装依赖、不读取凭据或环境变量。最终只输出：1. APM_SMOKE_OK；2. README 标题（不存在则明确说明）；3. 依据 README 用中文一句话概括项目目标。不要输出本机路径或个人信息。完成即结束。"
 }
