@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-09T07:17:22.677098+00:00",
-  "task_id": "verifiable-measurement-pilot-20260909-002",
-  "status": "timed_out",
-  "detail": "result saved locally; no automatic rerun",
-  "last_seq": 6,
+  "updated_at": "2026-09-09T07:18:27.412765+00:00",
+  "task_id": "metric-anchor-abstraction-20260909-001",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 7,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
