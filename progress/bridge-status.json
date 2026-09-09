@@ -1,0 +1,8 @@
+{
+  "updated_at": "2026-09-09T05:50:08.488166+00:00",
+  "task_id": null,
+  "status": "paused",
+  "detail": "paused: current task may finish; no new task until a newer run command",
+  "last_seq": 1,
+  "execution_enabled": false
+}
