@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-09T06:04:16.127059+00:00",
+  "updated_at": "2026-09-09T06:04:40.547885+00:00",
   "task_id": "smoke-readme-20260909-001",
-  "status": "running",
-  "detail": "Codex task started",
+  "status": "failed",
+  "detail": "result saved locally; no automatic rerun",
   "last_seq": 2,
   "execution_enabled": true
 }
