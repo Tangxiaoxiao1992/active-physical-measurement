@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-09T12:16:52.784508+00:00",
-  "task_id": "target-bottom-edge-robust-refinement-20260909-001",
-  "status": "completed",
-  "detail": "result saved locally; no automatic rerun",
-  "last_seq": 14,
+  "updated_at": "2026-09-09T12:17:57.379654+00:00",
+  "task_id": "qwen3-vl-anchor-normalized-region-20260909-001",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 15,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
