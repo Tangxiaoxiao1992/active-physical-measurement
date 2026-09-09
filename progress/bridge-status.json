@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-09T09:05:20.213369+00:00",
-  "task_id": "qwen3-vl-static-smoke-20260909-001",
-  "status": "stopped",
-  "detail": "control read/validation failed: URLError",
-  "last_seq": 9,
+  "updated_at": "2026-09-09T09:06:24.964254+00:00",
+  "task_id": "qwen3-vl-static-smoke-resume-20260909-002",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 10,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
