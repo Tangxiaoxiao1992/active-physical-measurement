@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-09T08:02:15.429796+00:00",
+  "updated_at": "2026-09-09T08:03:20.416044+00:00",
   "task_id": "qwen3-vl-static-smoke-20260909-001",
-  "status": "running",
-  "detail": "Codex task started",
-  "last_seq": 8,
+  "status": "stopped",
+  "detail": "result saved locally; no automatic rerun",
+  "last_seq": 9,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
