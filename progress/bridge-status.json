@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-09T08:28:14.941454+00:00",
+  "updated_at": "2026-09-09T08:29:34.448110+00:00",
   "task_id": "qwen3-vl-static-smoke-20260909-001",
   "status": "stopped",
-  "detail": "result saved locally; no automatic rerun",
+  "detail": "control read/validation failed: URLError",
   "last_seq": 9,
   "execution_enabled": true,
   "write_enabled": true,
