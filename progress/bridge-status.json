@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-09T06:10:03.485746+00:00",
-  "task_id": "smoke-readme-20260909-001",
-  "status": "failed",
-  "detail": "result saved locally; no automatic rerun",
+  "updated_at": "2026-09-09T06:10:24.412235+00:00",
+  "task_id": null,
+  "status": "idle",
+  "detail": "waiting",
   "last_seq": 2,
   "execution_enabled": true
 }
