@@ -16,15 +16,16 @@ Updated: 2026-09-09 (Asia/Shanghai)
 ## Active safety configuration
 
 - `execution_enabled`: **true**
-- `write_enabled`: **false** (remote tasks are read-only)
-- `publish_report`: **false** (automatic report return is **not enabled**)
+- `write_enabled`: **true** (enabled locally on explicit instruction; task prompts and bridge safeguards still apply)
+- `publish_report`: **true** (automatic report return is enabled; public-safety review remains required)
 - No paid research experiment has been started.
 - GitHub credentials remain in the local credential manager/process environment and are not stored in this repository.
 
 ## Pending / unresolved
 
 - The first read-only smoke task (`smoke-readme-20260909-001`, sequence 2) failed before model execution because the SDK's pinned runtime could not parse a newer local configuration shape. The sanitized analysis is in `progress/smoke-diagnostic.md`.
-- The runtime compatibility issue is fixed locally, the bridge has been restarted, and it is waiting for a new, unexpired remote read-only smoke command with a sequence number greater than 2.
-- Automatic report publication will remain disabled until the smoke result is reviewed for public-safe content.
+- The runtime compatibility issue was fixed locally, and the replacement read-only smoke task (`smoke-readme-20260909-002`, sequence 3) completed successfully.
+- The sanitized result for `verifiable-measurement-pilot-20260909-001` (sequence 4) was reviewed and published under `progress/bridge-reports/`.
+- Automatic report publication is now enabled on explicit instruction.
 - End-to-end remote command checks for duplicate suppression, timeout, and targeted stop remain to be completed after the smoke task; local validation and unit coverage have passed.
 - Windows sign-in startup registration remains to be finalized after the end-to-end smoke check.
