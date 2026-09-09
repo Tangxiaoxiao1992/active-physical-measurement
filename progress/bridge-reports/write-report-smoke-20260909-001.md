@@ -1,0 +1,4 @@
+- **WRITE_PROBE_OK**：已写入并读取核对 `.apm_write_probe.txt`，内容为 `APM_WRITE_OK`。
+- **临时文件已删除**：最终检查结果为不存在；本任务未留下持久文件。
+- **上一任务不可见**：在允许访问的项目记录中未找到任务 ID `verifiable-measurement-pilot-20260909-001`。虽发现项目相对记录 `active-physical-measurement/runs/apm_dev_round1_v1_full/report.md`，但其未关联该任务 ID，无法据此确认上一任务是否修改代码、运行了哪些测试或得出何种结论。
+- **失败与下一步**：若需核验上一任务，须将其脱敏最终记录放入当前允许访问的项目记录或桥运行目录。未扩大权限，未运行实验、测试或付费 API，未安装依赖。
