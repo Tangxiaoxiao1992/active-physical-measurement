@@ -1,7 +1,7 @@
 {
-  "seq": 8,
-  "action": "run",
+  "seq": 9,
+  "action": "stop",
   "task_id": "qwen3-vl-static-smoke-20260909-001",
   "expires_at": "2026-09-09T16:00:00Z",
-  "prompt": "在 metric-anchor-abstraction-20260909-001 完成后继续。本任务只针对静态木块尺寸测量接入小型视觉模型并跑一个可核查冒烟测试，不做速度、加速度、GRPO或大规模实验。先阅读当前工作区全部现有代码、未提交修改和上一任务报告；必须保留已有改动，不得 reset、checkout、清理或覆盖用户文件，也不要另建与现有架构竞争的平行实现。\n\n目标模型为 Qwen/Qwen3-VL-2B-Instruct。先只读检查 GPU型号、可用显存、驱动、CUDA、Python、PyTorch、Transformers、磁盘空间和现有虚拟环境，并把不含用户名、绝对路径、凭据或环境变量值的结果写入本地运行报告。不得读取或打印密钥。若磁盘可用空间不足15GB、没有受支持NVIDIA GPU，或无法建立隔离环境，应停止下载并清楚报告阻塞。\n\n在项目内建立或复用隔离的VLM环境，不要修改系统Python，不要盲目升级现有全局PyTorch。优先复用兼容的CUDA PyTorch；其余依赖按Qwen3-VL官方Transformers方式安装，首轮使用PyTorch SDPA，不安装FlashAttention。模型权重下载到已被git忽略的models/Qwen3-VL-2B-Instruct目录，不得提交或上传权重。禁止调用任何付费API。\n\n把模型适配器接入现有measurement plan与metric anchor流程，而不是让模型直接猜最终长度。输入为一张木块关键帧、问题和已知物理条件；模型必须输出结构化计划，至少包含目标物、目标维度、目标端点或区域、metric anchor类型、known quantity、visual primitive、support region、anchor points、几何关系、适用性、measure/search_same_frame/reobserve/stop_insufficient动作及具体reason codes。坐标必须明确为原图绝对像素坐标。允许一次基于schema错误的模型格式修复，必须同时保存原始输出和修复输出。\n\n选择项目现有的一张本地木块图像进行一次temperature=0或等价greedy的真实模型推理。不要把人工坐标、评分真值或标准答案放入模型提示词。将模型输出中的bbox、目标端点、anchor points和补测区域全部回画到原图，校验点与框是否越界，并由现有验证器判断该计划是否可执行。即使模型判断reobserve或失败，也必须如实保留，不得手工改成成功。保存模型版本或revision、提示词、原始响应、修复响应、耗时、峰值显存、验证错误和标注图；包含第三方图像的运行产物只保存在本地忽略目录，不推送公开仓库。\n\n补充不依赖模型权重的单元测试，至少覆盖合法measure、错误锚点reject、证据不足reobserve、越界坐标、非法JSON和回画标注。先运行现有全部测试，再运行新增测试。不得覆盖历史run，使用唯一run ID qwen3_vl_static_smoke_20260909_001。\n\n完成后停止，不进行SFT或GRPO。最终报告必须区分：代码闭环是否通过、模型是否成功加载、是否发生真实模型推理、JSON是否通过、坐标是否可回画、计划是否可执行。列出实际修改文件、测试结果、显存与时间、失败原因和下一步建议；报告只使用项目相对路径，不包含本机路径、用户名、凭据或环境变量值。不要自行git push。"
+  "prompt": "用户要求立即停止当前模型下载、安装与冒烟测试任务。终止相关进程并保留已经产生的文件和日志，不清理、不回滚、不继续安装或下载。"
 }
