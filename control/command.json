@@ -1,7 +1,7 @@
 {
-  "seq": 9,
-  "action": "stop",
-  "task_id": "qwen3-vl-static-smoke-20260909-001",
-  "expires_at": "2026-09-09T16:00:00Z",
-  "prompt": "用户要求立即停止当前模型下载、安装与冒烟测试任务。终止相关进程并保留已经产生的文件和日志，不清理、不回滚、不继续安装或下载。"
+  "seq": 10,
+  "action": "run",
+  "task_id": "qwen3-vl-static-smoke-resume-20260909-002",
+  "expires_at": "2026-09-09T18:00:00Z",
+  "prompt": "继续此前被用户停止的 Qwen3-VL 静态木块冒烟测试，但先检查，不要假设安装成功。本任务不做速度、加速度、SFT、GRPO或大规模实验。\n\n先阅读当前工作区、所有未提交修改、metric-anchor-abstraction-20260909-001 的本地结果，以及被停止任务 qwen3-vl-static-smoke-20260909-001 已留下的文件与日志。必须保留已有修改；禁止 reset、checkout、clean、删除模型缓存或覆盖历史运行。\n\n首先验证项目虚拟环境 .venv-vlm：\n1）记录Python、PyTorch、torch.version.cuda、torch.cuda.is_available、GPU名称、总/可用显存；\n2）确认模型目录 models/Qwen3-VL-2B-Instruct 是否包含完整配置、processor/tokenizer文件、safetensors索引和全部权重分片；\n3）验证 transformers 能导入 Qwen3VLForConditionalGeneration 和 AutoProcessor；\n4）不要重装PyTorch，不要修改系统Python。如果只有模型权重缺少个别分片，可使用 hf download 对同一目录断点续传；除此之外遇到环境问题应停止并报告，不做大范围升级。\n\n若以上检查通过，在现有 metric anchor v3 体系中完成或复用Qwen3-VL适配器，不建立竞争性平行架构。模型只输出可核查measurement plan，不直接猜最终尺寸。提示词只能包含原始木块图像、用户问题和题面已知物理条件，不得包含人工端点、评分真值、标准答案或历史模型答案。使用greedy/do_sample=false作为temperature=0等价设置。\n\n运行一次真实模型推理，并保存到新的唯一运行目录 runs/qwen3_vl_static_smoke_20260909_002。必须保存模型标识、输入图像标识、完整提示词、原始响应、若发生则唯一一次schema修复响应、解析结果、验证错误、耗时和峰值显存。将模型输出的target bbox/端点、metric anchor support region/anchor points及reobserve区域全部回画；检查坐标是否在原图范围。即使模型输出reobserve、reject或计划不可执行，也如实保存，绝不人工改成成功。\n\n先运行现有全部单元测试，再补足并运行不需要模型权重的测试，至少覆盖measure、reject/search_same_frame、reobserve、stop_insufficient、非法JSON、越界坐标和标注回画。不要调用付费API，不读取隐藏评分真值，不修改历史run，不提交模型或第三方图像，不自行git push。\n\n完成后停止。最终报告明确区分：环境验证、权重完整性、真实模型是否执行、模型原始动作、JSON/schema结果、坐标回画结果、计划是否可执行、耗时/峰值显存、实际修改文件、测试结果和下一步；只写项目相对路径，不包含本机路径、用户名、凭据或环境变量值。"
 }
