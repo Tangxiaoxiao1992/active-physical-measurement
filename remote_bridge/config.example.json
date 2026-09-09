@@ -1,0 +1,12 @@
+{
+  "repo": "Tangxiaoxiao1992/active-physical-measurement",
+  "branch": "main",
+  "workspace": "C:/REPLACE/active-physical-measurement",
+  "model": null,
+  "execution_enabled": false,
+  "write_enabled": false,
+  "publish_report": false,
+  "poll_seconds": 20,
+  "max_task_seconds": 1800,
+  "lock_port": 47683
+}
