@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T15:40:23.625428+00:00",
+  "updated_at": "2026-09-09T15:41:28.927334+00:00",
   "task_id": "qwen3-vl-anchor-normalized-region-20260909-001",
   "status": "completed",
   "detail": "control read/validation failed: URLError",
