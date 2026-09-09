@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-09T12:29:49.934445+00:00",
+  "updated_at": "2026-09-09T12:30:54.954750+00:00",
   "task_id": "qwen3-vl-anchor-normalized-region-20260909-001",
-  "status": "running",
-  "detail": "Codex task started",
+  "status": "completed",
+  "detail": "result saved locally; no automatic rerun",
   "last_seq": 15,
   "execution_enabled": true,
   "write_enabled": true,
