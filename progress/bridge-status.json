@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-09T11:11:38.323407+00:00",
-  "task_id": "qwen3-vl-target-normalized-coordinates-20260909-001",
-  "status": "completed",
-  "detail": "result saved locally; no automatic rerun",
-  "last_seq": 12,
+  "updated_at": "2026-09-09T11:12:43.163346+00:00",
+  "task_id": "qwen3-vl-normalized-json-fence-replay-20260909-001",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 13,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
