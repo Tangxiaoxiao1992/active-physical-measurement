@@ -1,7 +1,7 @@
 {
-  "seq": 6,
+  "seq": 7,
   "action": "run",
-  "task_id": "verifiable-measurement-pilot-20260909-002",
-  "expires_at": "2026-09-09T12:00:00Z",
-  "prompt": "继续 active-physical-measurement 项目，实际实现一轮可核查测量工具开发与小规模验证。先阅读 README、AGENTS.md（若有）、runs/apm_dev_round1_v1_full/report.md 以及现有 runner、schema、测量工具和测试。目标是针对 Q001、Q002、Q015、Q017 解决三类已知问题：规划输出 bbox/schema 无效；木块目标维度与端点不可核查；尺子刻度标定缺失。请完成：1）定义并实现严格的结构化 measurement plan schema，字段至少包括题型、目标对象、目标维度、关键帧、目标端点或球心、参考物端点/刻度方向、几何/换算公式和置信度；2）增加解析、字段校验、坐标边界校验、端点与目标维度一致性校验，失败时生成具体机器可读错误并支持最多2次重试；3）执行器生成可核查叠加图，画出目标点/端点、参考点/刻度、连线和标签，同时保存原始计划、校验记录和程序复算记录；4）优先复用现有 OpenCV/圆拟合工具；为木块实现通用的高分辨率关键帧裁剪接口与 ruler tick calibration 最小可行版本，不写死题目答案或单题坐标；5）补充单元测试和至少一个不依赖付费API的本地端到端样例。不得调用新的付费API；缺少原始视频或标注时，用现有本地数据完成能完成的部分，并明确阻塞，不得猜造结果；6）比较改动前后 schema有效率、自动测量成功率、数值误差（有合法真值时）和人工可核查性。不得读取隐藏测试答案来生成计划，不得修改评分真值，不得覆盖历史记录。保持改动范围聚焦；运行相关测试并记录命令和结果。最终输出可公开脱敏报告：列出实际修改文件、核心设计、测试结果、证据文件的项目相对路径、尚未解决问题和下一轮最小实验。不要输出本机绝对路径、用户名、凭据或环境变量；不要自行 git push。"
+  "task_id": "metric-anchor-abstraction-20260909-001",
+  "expires_at": "2026-09-09T14:00:00Z",
+  "prompt": "在当前 verifiable measurement任务完成后继续，但研究范围仍聚焦木块尺寸测量，不再推进台球速度等其他题。重要设计修正：不要把系统写成只识别 ruler 的专用程序，而要把任何能建立像素量与真实物理量对应关系的线索统一抽象为 metric anchor（度量锚点）。先阅读上一任务代码与回传结果，再完成以下工作：1）将 measurement plan schema中的 ruler 专用语义上移为 metric_reference/metric_anchor，至少表达 known_quantity、value、unit、visual_primitive、support_region、anchor_points、direction、plane/depth relation、applicability conditions和confidence；2）visual_primitive至少支持 periodic_ticks、known_segment、known_object_extent、grid_or_lattice、depth_reference、temporal_interval，当前木块实现可只真正执行 periodic_ticks 与 known_segment，其余必须返回明确 unsupported 而不能猜；3）建立工具注册/路由接口，RulerNet或传统刻度检测只是 periodic_ticks 的一个后端，不能让核心流程依赖对象名称必须叫ruler；4）修改规划提示，使AI先从题目已知条件抽取物理先验，再在画面中寻找与该先验对应的可测视觉结构。例如‘相邻标记间隔1厘米’应落为 periodic_ticks(step=1 cm)，不要求识别对象名称；5）验证器必须检查单位、锚点方向、目标边与锚点的共面/平行/深度关系以及该锚点是否适用于目标尺寸；6）输出规范化的 measurement_equation，让程序而非AI执行最终计算；7）补充不依赖付费API的单元测试，至少覆盖尺子刻度、非尺子周期标记和已知线段三种表面形式，并证明它们能归一化为同一种metric anchor接口；8）不要下载或训练大模型，不调用付费API，不写死Q001/Q002答案或坐标，不修改评分真值。最终报告需给出实际修改文件、测试结果、兼容性影响、尚未实现的锚点类型和下一步木块实验。只报告项目相对路径，不含本机路径、用户名、凭据或环境变量；不要自行git push。"
 }
