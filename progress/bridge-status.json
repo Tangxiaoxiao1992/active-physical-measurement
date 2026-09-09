@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T08:31:44.633556+00:00",
+  "updated_at": "2026-09-09T08:32:51.960432+00:00",
   "task_id": "qwen3-vl-static-smoke-20260909-001",
   "status": "stopped",
   "detail": "control read/validation failed: URLError",
