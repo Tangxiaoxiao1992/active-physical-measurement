@@ -1,0 +1,10 @@
+- 输入同一性：854×480，SHA-256 `e148b1f84cc6b96fc72beb44c8142d810e7464ebd6197510ec6409ea5c03bdb9`；证据见 [input_provenance.json](runs/target_bottom_edge_robust_refinement_20260909_001/input_provenance.json)。
+- 三个候选 y（8%/12%/16%）：`[324, 324, 324]`；极差 `0 px`。
+- 峰值：`96.1333 / 96.5333 / 97.0667`；最终峰值 `96.5333`；基线 median/MAD：`0/0`；全部预设条件通过。
+- `refined_y = 324`；`delta_y = -2`。
+- 精修 bbox：`[183,211,674,324]`。
+- Overlay：[overlay.png](runs/target_bottom_edge_robust_refinement_20260909_001/overlay.png)。
+- 曲线：[row_scores.csv](runs/target_bottom_edge_robust_refinement_20260909_001/row_scores.csv)、[score_plot.png](runs/target_bottom_edge_robust_refinement_20260909_001/score_plot.png)。
+- 测试：基线 `36/36`，最终 `41/41` 通过；见 [test_results.json](runs/target_bottom_edge_robust_refinement_20260909_001/test_results.json)。失败：无。
+- 程序可确认：输入同一、检测确定性、唯一峰满足强度与稳定性条件、固定三边未变、bbox 合法、产物完整。
+- 需人工确认：必须查看 overlay 判断新下边界是否在语义上优于旧边界；程序分数与向上移动本身不能证明。
