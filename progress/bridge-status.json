@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-10T04:21:13.045815+00:00",
-  "task_id": "qwen3-vl-anchor-crop-localization-20260910-001",
-  "status": "running",
-  "detail": "Codex task started",
+  "updated_at": "2026-09-10T04:27:22.022406+00:00",
+  "task_id": null,
+  "status": "idle",
+  "detail": "waiting",
   "last_seq": 19,
   "execution_enabled": true,
   "write_enabled": true,
