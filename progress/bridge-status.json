@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-09T16:29:05.425808+00:00",
-  "task_id": "qwen3-vl-anchor-normalized-region-20260909-001",
-  "status": "completed",
-  "detail": "control read/validation failed: URLError",
-  "last_seq": 15,
+  "updated_at": "2026-09-10T02:57:57.024661+00:00",
+  "task_id": "qwen3-vl-anchor-integer-1000-region-20260909-001",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 16,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
