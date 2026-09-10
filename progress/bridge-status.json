@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-10T15:47:02.042353+00:00",
-  "task_id": "qwen3-vl-anchor-region-choice-visual-hint-utf8-20260910-001",
-  "status": "completed",
-  "detail": "control read/validation failed: URLError",
-  "last_seq": 28,
+  "updated_at": "2026-09-10T15:48:06.920451+00:00",
+  "task_id": "qwen3-vl-anchor-region-choice-visual-hint-utf8-resume-20260910-001",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 29,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
