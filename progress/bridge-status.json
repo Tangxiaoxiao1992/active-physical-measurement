@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-10T06:16:30.940703+00:00",
+  "updated_at": "2026-09-10T06:17:35.439201+00:00",
   "task_id": "qwen3-vl-anchor-crop-recovery-20260910-002",
   "status": "completed",
   "detail": "control read/validation failed: URLError",
