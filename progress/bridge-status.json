@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-10T11:21:22.448952+00:00",
-  "task_id": "qwen3-vl-anchor-region-choice-20260910-001",
-  "status": "timed_out",
-  "detail": "result saved locally; no automatic rerun",
-  "last_seq": 25,
+  "updated_at": "2026-09-10T11:22:27.597142+00:00",
+  "task_id": "qwen3-vl-anchor-region-choice-fresh-20260910-002",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 26,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
