@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-10T06:47:44.754302+00:00",
-  "task_id": "qwen3-vl-anchor-crop-recovery-20260910-002",
-  "status": "completed",
-  "detail": "control read/validation failed: URLError",
-  "last_seq": 20,
+  "updated_at": "2026-09-10T06:48:49.189466+00:00",
+  "task_id": "crop-evidence-path-audit-20260910-001",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 21,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
