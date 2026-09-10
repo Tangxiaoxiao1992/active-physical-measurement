@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-10T15:44:37.220928+00:00",
+  "updated_at": "2026-09-10T15:45:57.309975+00:00",
   "task_id": "qwen3-vl-anchor-region-choice-visual-hint-utf8-20260910-001",
   "status": "completed",
-  "detail": "result saved locally; no automatic rerun",
+  "detail": "control read/validation failed: URLError",
   "last_seq": 28,
   "execution_enabled": true,
   "write_enabled": true,
