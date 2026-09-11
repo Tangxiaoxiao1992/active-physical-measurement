@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-11T13:10:38.551297+00:00",
+  "updated_at": "2026-09-11T13:11:22.594904+00:00",
   "task_id": "anchor-connected-tick-morphology-diagnostic-20260911-001",
-  "status": "running",
-  "detail": "Codex task started",
+  "status": "completed",
+  "detail": "result saved locally; no automatic rerun",
   "last_seq": 39,
   "execution_enabled": true,
   "write_enabled": true,
