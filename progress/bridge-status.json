@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-11T12:23:54.102174+00:00",
+  "updated_at": "2026-09-11T12:24:17.070464+00:00",
   "task_id": "anchor-line-morphology-evidence-diagnostic-20260911-001",
-  "status": "running",
-  "detail": "Codex task started",
+  "status": "completed",
+  "detail": "result saved locally; no automatic rerun",
   "last_seq": 38,
   "execution_enabled": true,
   "write_enabled": true,
