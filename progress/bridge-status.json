@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-11T07:07:21.657173+00:00",
+  "updated_at": "2026-09-11T07:08:26.111121+00:00",
   "task_id": "qwen3-vl-anchor-observation-controlled-comparison-fresh-20260911-001",
   "status": "completed",
   "detail": "control read/validation failed: URLError",
