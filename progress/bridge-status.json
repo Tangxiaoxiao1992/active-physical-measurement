@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-11T06:57:27.059412+00:00",
+  "updated_at": "2026-09-11T06:58:45.678372+00:00",
   "task_id": "qwen3-vl-anchor-observation-controlled-comparison-fresh-20260911-001",
   "status": "completed",
-  "detail": "result saved locally; no automatic rerun",
+  "detail": "control read/validation failed: URLError",
   "last_seq": 35,
   "execution_enabled": true,
   "write_enabled": true,
