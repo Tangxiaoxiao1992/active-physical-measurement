@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-11T14:53:27.812146+00:00",
-  "task_id": "anchor-width-crossing-sampling-audit-20260911-001",
-  "status": "completed",
-  "detail": "result saved locally; no automatic rerun",
-  "last_seq": 40,
+  "updated_at": "2026-09-11T14:54:32.586445+00:00",
+  "task_id": "anchor-root-versus-internal-crossing-diagnostic-20260911-001",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 41,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
