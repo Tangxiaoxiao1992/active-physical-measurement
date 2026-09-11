@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-11T10:10:22.061279+00:00",
+  "updated_at": "2026-09-11T10:11:41.010677+00:00",
   "task_id": "qwen3-vl-clear-ruler-texture-diagnostic-20260911-001",
   "status": "completed",
-  "detail": "result saved locally; no automatic rerun",
+  "detail": "control read/validation failed: URLError",
   "last_seq": 37,
   "execution_enabled": true,
   "write_enabled": true,
