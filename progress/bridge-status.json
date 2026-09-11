@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-11T16:36:32.048632+00:00",
+  "updated_at": "2026-09-11T16:36:55.483790+00:00",
   "task_id": "rulernet-local-archives-detector-baseline-20260912-001",
-  "status": "running",
-  "detail": "Codex task started",
+  "status": "completed",
+  "detail": "result saved locally; no automatic rerun",
   "last_seq": 43,
   "execution_enabled": true,
   "write_enabled": true,
