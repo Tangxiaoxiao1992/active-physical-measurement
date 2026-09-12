@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-11T18:22:39.094509+00:00",
-  "task_id": "rulernet-completed-deps-detector-baseline-20260912-001",
-  "status": "completed",
-  "detail": "result saved locally; no automatic rerun",
+  "updated_at": "2026-09-12T04:50:55.219242+00:00",
+  "task_id": null,
+  "status": "idle",
+  "detail": "waiting",
   "last_seq": 45,
   "execution_enabled": true,
   "write_enabled": true,
