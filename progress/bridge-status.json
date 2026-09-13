@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-13T13:52:22.190055+00:00",
-  "task_id": "rulernet-crop-preprocessing-reference-audit-20260913-001",
-  "status": "completed",
-  "detail": "result saved locally; no automatic rerun",
-  "last_seq": 60,
+  "updated_at": "2026-09-13T13:53:27.529236+00:00",
+  "task_id": "rulernet-official-preprocessing-paired-check-20260913-001",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 61,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
