@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-13T10:22:12.690656+00:00",
+  "updated_at": "2026-09-13T10:22:56.624248+00:00",
   "task_id": "ruler-local-roi-gate-pair-fresh-20260913-001",
-  "status": "running",
-  "detail": "Codex task started",
+  "status": "completed",
+  "detail": "result saved locally; no automatic rerun",
   "last_seq": 57,
   "execution_enabled": true,
   "write_enabled": true,
