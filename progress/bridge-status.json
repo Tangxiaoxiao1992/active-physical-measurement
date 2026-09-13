@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-09-13T15:16:22.640783+00:00",
+  "updated_at": "2026-09-13T15:17:27.709066+00:00",
   "task_id": "rulernet-crop-stage-final-evidence-review-20260913-001",
   "status": "running",
-  "detail": "control read/validation failed: RemoteDisconnected",
+  "detail": "control read/validation failed: URLError",
   "last_seq": 62,
   "execution_enabled": true,
   "write_enabled": true,
