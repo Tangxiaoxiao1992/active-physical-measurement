@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-13T14:59:05.029129+00:00",
-  "task_id": "rulernet-official-preprocessing-paired-check-20260913-001",
-  "status": "completed",
-  "detail": "control read/validation failed: RemoteDisconnected",
-  "last_seq": 61,
+  "updated_at": "2026-09-13T15:00:10.668896+00:00",
+  "task_id": "rulernet-crop-stage-final-evidence-review-20260913-001",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 62,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
