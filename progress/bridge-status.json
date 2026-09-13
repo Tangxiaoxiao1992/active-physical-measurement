@@ -1,9 +1,9 @@
 {
-  "updated_at": "2026-09-13T11:30:10.434060+00:00",
-  "task_id": "rulernet-cropped-rulers-diagnostic-20260913-001",
-  "status": "completed",
-  "detail": "result saved locally; no automatic rerun",
-  "last_seq": 59,
+  "updated_at": "2026-09-13T11:31:14.815690+00:00",
+  "task_id": "rulernet-crop-preprocessing-reference-audit-20260913-001",
+  "status": "running",
+  "detail": "Codex task started",
+  "last_seq": 60,
   "execution_enabled": true,
   "write_enabled": true,
   "publish_report": true
