@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-13T14:56:39.305767+00:00",
+  "updated_at": "2026-09-13T14:57:55.290697+00:00",
   "task_id": "rulernet-official-preprocessing-paired-check-20260913-001",
   "status": "completed",
   "detail": "control read/validation failed: RemoteDisconnected",
